@@ -3,9 +3,11 @@ async function getData(url) {
     return response.json();
 }
 
-const data = getData('https://jamfunction.azurewebsites.net/api/HttpTrigger1');
+const data = await getData('https://jamfunction.azurewebsites.net/api/HttpTrigger1');
 
 console.log({ data })
+
+document.getElementById("apiResponse").innerHTML = data
 
 /*fetch('https://jamfunction.azurewebsites.net/api/HttpTrigger1')
 .then((response) => response.json())

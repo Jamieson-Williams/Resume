@@ -46,6 +46,13 @@ p.text {
     border-bottom: 1px solid #393e46;
 }
 
+.Footer {
+    white-space: nowrap;
+    padding-top: 20px;
+    text-align: center;
+    font-size: smaller;
+}
+
 h1 {
     font-size: 48px;
     text-transform: uppercase;
