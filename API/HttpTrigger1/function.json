@@ -1,0 +1,42 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+      
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "in",
+      "name": "inputdoc",
+      "databaseName": "serverless-db",
+      "collectionName": "visitors",
+      "connectionStringSetting": "AzureCosmosDBConnectionString",
+      "partitionKey": "counter",
+      "id": "counter"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "outputdoc",
+      "databaseName": "serverless-db",
+      "collectionName": "visitors",
+      "createIfNotExists": "true",
+      "connectionStringSetting": "AzureCosmosDBConnectionString",
+      "partitionKey": "counter",
+      "id": "counter"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    }
+  ]
+}

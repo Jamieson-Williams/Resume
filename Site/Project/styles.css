@@ -1,0 +1,66 @@
+.Outline {
+    background-color: #f5f5f5;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border-top: 8px solid #393e46;
+    border-bottom: 3px solid #393e46;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Info {
+    height: 200px;
+    display: block;
+    margin: 3em 0 2em 0;
+    border-bottom: 1px solid #393e46;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.Content {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.Name {
+    margin: 0;
+    float: left;
+    width: 66%
+}
+
+.Contact {
+    float: left;
+    margin: 0;
+    width: 32%;
+}
+
+p.text {
+    margin: 2px;
+    display: inline;
+}
+
+.Paragraph {
+    border-bottom: 1px solid #393e46;
+}
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: #333;
+    margin: 0;
+}
+
+p {
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    font-weight: normal;
+    font-style: italic;
+}
