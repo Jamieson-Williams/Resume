@@ -4,18 +4,18 @@
     margin-left: 20%;
     margin-top: 3%;
     margin-bottom: 3%;
-    border-top: 8px solid #393e46;
-    border-bottom: 3px solid #393e46;
+    border-top: 0.5em solid #393e46;
+    border-bottom: 0.25em solid #393e46;
     padding-left: 6%;
     padding-right: 6%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .Info {
-    height: 200px;
+    height: 12em;
     display: block;
     margin: 3em 0 2em 0;
-    border-bottom: 1px solid #393e46;
+    border-bottom: 0.1em solid #393e46;
     padding-bottom: 3%;
     width: 100%;
 }
@@ -38,25 +38,24 @@
 }
 
 p.text {
-    margin: 2px;
     display: inline;
 }
 
 .Paragraph {
-    border-bottom: 1px solid #393e46;
+    border-bottom: .1em solid #393e46;
 }
 
 .Footer {
     white-space: nowrap;
-    padding-top: 20px;
+    padding-top: 2em;
     text-align: center;
     font-size: smaller;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 3em;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .1em;
     font-weight: normal;
     color: #333;
     margin: 0;
@@ -71,4 +70,8 @@ h2 {
     color: #333;
     font-weight: normal;
     font-style: italic;
+}
+
+a {
+    color: #00e;
 }
