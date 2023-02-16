@@ -1,15 +1,22 @@
 async function getData(url) {
     const response = await fetch(url);
-    return response.json();
+    return await response.json();
 }
 
-const data = await getData('https://jamfunction.azurewebsites.net/api/HttpTrigger1');
+getData('https://jamfunction.azurewebsites.net/api/HttpTrigger1')
+    .then(data => {
+        console.log({ data });
+        document.getElementById("apiResponse").innerHTML = JSON.stringify(data);
+    })
+    .catch(error => {
+        console.error(error);
+    });
 
-console.log({ data })
+/*console.log({ data })
 
 document.getElementById("apiResponse").innerHTML = data
 
-/*fetch('https://jamfunction.azurewebsites.net/api/HttpTrigger1')
+fetch('https://jamfunction.azurewebsites.net/api/HttpTrigger1')
 .then((response) => response.json())
 .then ((data) => console.log(data))
 */
