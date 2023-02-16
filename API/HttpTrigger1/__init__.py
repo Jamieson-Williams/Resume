@@ -22,7 +22,13 @@ def main(req: func.HttpRequest, inputdoc:func.DocumentList, outputdoc:func.Out[f
             status_code=404
         )
     else:
-        item = container.read_item("counter",partition_key="counter")
+        try: 
+            item = container.read_item("counter",partition_key="counter")
+        except: 
+            values = {"id": "counter", "value":0}
+            item = container.create_item(body=values,partition_key="counter")
+            print(item)
+        
         item['value'] = item['value'] + 1
         response = container.upsert_item(body=item)
         return func.HttpResponse(
